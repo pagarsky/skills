@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.cursor/
+!.cursor/skills/
+!.cursor/skills/**
+!README.md
