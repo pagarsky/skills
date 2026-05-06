@@ -1,0 +1,22 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Per-video raw artefacts (audio, transcripts, frames, intermediate JSON).
+# Regenerable by re-running the pipeline.
+work/
+
+# Cloned upstream repos used only as canonical-code sources during pipeline.
+repos/
+
+# Logs
+*.log
+
+# Editor / OS scratch
+.DS_Store
+.idea/
+.vscode/
+*.swp
