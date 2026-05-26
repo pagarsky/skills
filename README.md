@@ -7,4 +7,6 @@ Current contents:
 - `.cursor/skills/video-companion-guides/`: a skill for turning long-form videos (YouTube lectures, conference talks, keynotes, podcasts, interviews) into book-chapter-style markdown companion guides — fully local on Apple Silicon, $0 cloud spend.
 - `.cursor/skills/credentials/`: a macOS-only skill for obtaining secrets (passwords, API tokens, sudo, basic-auth) via osascript prompts + Keychain so they never appear in chat transcripts.
 
+The skills live under `.cursor/skills/`; a `.claude/skills` symlink mirrors the same tree so Claude Code can discover them at their canonical path without duplication.
+
 This repository is intended to stay generic and public. Project-specific working files remain local and are ignored by git.
