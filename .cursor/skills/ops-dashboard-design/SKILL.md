@@ -5,7 +5,7 @@ description: Design or review monitoring/ops dashboards (Grafana, Datadog, custo
 
 # Ops dashboard design
 
-A dashboard is a set of answers, not a set of charts. A number without a target is not informative: "40 fallbacks" means nothing until the panel says whether 40 is good, bad, or someone's to-do list.
+A dashboard is a set of answers, not a set of charts. A number without a target is not informative: "40 events/day" means nothing until the panel says whether 40 is good, bad, or someone's to-do list.
 
 ## Procedure
 
@@ -19,7 +19,7 @@ A dashboard is a set of answers, not a set of charts. A number without a target 
    - "Who's left / who's the biggest offender" → sorted horizontal bar gauge or table, NOT a stacked time series with a dozen colors — the question is *who*, not *when*.
    - Continuous rates/latencies → lines.
 6. **Default range = the story's cadence.** A multi-week migration gets 14–30d; an incident dashboard gets hours. Don't default to a range where the interesting change is a few pixels tall.
-7. **Titles state the question or the expectation** ("Legacy DNS — should reach 0"); the description is one sentence: what this means + when to act. No prose paragraphs.
+7. **Titles state the question or the expectation** ("Deprecated path usage — should reach 0"); the description is one sentence: what this means + when to act. No prose paragraphs.
 8. **Distinguish "No data" from zero.** Set an explicit no-value display where absence means zero; but when a series has never existed, decide whether "No data" is a truthful message or a bug in the reader's eyes.
 9. **Chart what the instrumentation cannot say.** If failures emit no metric (the process dies before incrementing), silence looks like health — add a volume/liveness panel where a collapse is the alarm, and say so in its description.
 
