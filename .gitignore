@@ -1,8 +1,9 @@
 *
 !.gitignore
+!skills/
+!skills/**
 !.cursor/
-!.cursor/skills/
-!.cursor/skills/**
+!.cursor/skills
 !.claude/
 !.claude/skills
 !README.md
