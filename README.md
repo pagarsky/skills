@@ -8,6 +8,7 @@ Current contents:
 - `skills/credentials/`: a macOS-only skill for obtaining secrets (passwords, API tokens, sudo, basic-auth) via osascript prompts + Keychain so they never appear in chat transcripts.
 - `skills/ops-dashboard-design/`: a skill for designing monitoring/ops dashboards where every panel answers a named question — opposite-direction metrics separated, thresholds encode good/bad visually, values normalized instead of time windows frozen.
 - `skills/eli5-engineer/`: a skill for explaining unfamiliar systems and decisions to a competent engineer without the local context — background-first ordering, follow-the-wire concreteness, single extended analogy, cited claims.
+- `skills/fable-brief/`: a skill for preparing a task brief for a Claude Fable worker — settle decisions with the user, lint against Fable prompting anti-patterns, dry-run the brief on Fable at low effort until it has no blocking questions.
 - `skills/writing-pr/`: a skill for writing pull request titles and bodies — concise, diagram- and code-sample-first, no test-run narration, no intermediate-PR trivia.
 
 The skills live under `skills/` so the repo root is installable as a Claude Code plugin; `.cursor/skills` and `.claude/skills` are symlinks to it.
